@@ -42,3 +42,8 @@ Install softwares
 ### MongoDB
 http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/
 
++ Enable ports (27017, 28017) in iptables for mongod, HTTP and REST
++ Enable REST in configuration file
+   + Edit /etc/mongodb.conf
+   + Add "rest = true"
+
