@@ -16,9 +16,17 @@ You must reconfigure the guest so it will get its own IP address:
 
 Note that by doing this your VirtualBox guest is fully exposed on the local network, just like your host machine.
 
+### CentOS 6: Open a port for iptables
++ Edit /etc/sysconfig/iptables
++ Add the following line above the first REJECT statement:
+    -A INPUT -m state --state NEW -m tcp -p tcp --dport <port> -j ACCEPT
++ Restart iptables
+    service iptables restart
++ Test from remote machine
+    telnet <hostname> <port>
+
 Install softwares
 -----------------
-
 ### ssh
     yum search ssh
     yum install openssh-server.x86_64 openssh-clients.x86_64
