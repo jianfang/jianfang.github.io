@@ -28,3 +28,7 @@ You must reconfigure the guest so it will get its own IP address:
 + You can now connect to this IP address using HTTP, SSH, etc.
 
 Note that by doing this your VirtualBox guest is fully exposed on the local network, just like your host machine.
+
+Install MongoDB on CentOS
+-------------------------
+http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/
