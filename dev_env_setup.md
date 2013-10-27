@@ -5,20 +5,7 @@ Install Centos 6.4 in Virtualbox
 --------------------------------
 http://webees.me/linux/set-up-develop-environment-with-centos-6-4-in-virtualbox/
 
-Install ssh
------------
-    yum search ssh
-    yum install openssh-server.x86_64 openssh-clients.x86_64
-    chkconfig sshd on
-    service sshd start
-
-Install emacs
--------------
-    yum install emacs (with X)
-    yum install emacs-nox
-
-Connect to a VirtualBox guest machine over the network
-------------------------------------------------------
+### Connect to a VirtualBox guest machine over the network
 You must reconfigure the guest so it will get its own IP address:
 
 + Shutdown the guest
@@ -29,6 +16,19 @@ You must reconfigure the guest so it will get its own IP address:
 
 Note that by doing this your VirtualBox guest is fully exposed on the local network, just like your host machine.
 
-Install MongoDB on CentOS
--------------------------
+Install softwares
+-----------------
+
+### ssh
+    yum search ssh
+    yum install openssh-server.x86_64 openssh-clients.x86_64
+    chkconfig sshd on
+    service sshd start
+
+### emacs
+    yum install emacs (with X)
+    yum install emacs-nox
+
+### MongoDB
 http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/
+
