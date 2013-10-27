@@ -21,11 +21,9 @@ Note that by doing this your VirtualBox guest is fully exposed on the local netw
 + Add the following line above the first REJECT statement:
     `-A INPUT -m state --state NEW -m tcp -p tcp --dport <port> -j ACCEPT`
 + Restart iptables
-
-    service iptables restart
-
+    `service iptables restart`
 + Test from remote machine
-    telnet <hostname> <port>
+    `telnet <hostname> <port>`
 
 Install softwares
 -----------------
