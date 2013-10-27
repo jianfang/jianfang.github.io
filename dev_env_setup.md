@@ -44,5 +44,6 @@ http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fed
 
 + Enable ports (27017, 28017) in iptables for mongod, HTTP and REST
 + Enable REST by adding the following in configuration file (/etc/mongodb.conf) 
+
     `rest = true`
 
