@@ -3,7 +3,7 @@ Development Environment Setup
 
 Install Centos 6.4 in Virtualbox
 --------------------------------
-http://webees.me/linux/set-up-develop-environment-with-centos-6-4-in-virtualbox/
+http://webees.me/installing-centos-6-4-in-virtualbox-and-setting-up-host-only-networking/
 
 ### Connect to a VirtualBox guest machine over the network
 You must reconfigure the guest so it will get its own IP address:
