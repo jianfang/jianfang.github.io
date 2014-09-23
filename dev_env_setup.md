@@ -16,6 +16,41 @@ You must reconfigure the guest so it will get its own IP address:
 
 Note that by doing this your VirtualBox guest is fully exposed on the local network, just like your host machine.
 
+### Setup network for CentOS
++ Check MAC address in VM setting
++ Restart VM, check /etc/udev/rules.d/70-persistent-net.rules
+
+Bridge (DHCP)
+
+### vi /etc/sysconfig/network-scripts/ifcfg-eth0
+    DEVICE="eth0"
+    BOOTPROTO="dhcp"
+    HWADDR="08:00:27:E9:33:84"
+    NM_CONTROLLED="yes"
+    ONBOOT="yes"
+    TYPE="Ethernet"
+    UUID="cfb31300-f7b8-4723-9c81-6ddbc1b976bf"
+
+Host-only
+
+### vi /etc/sysconfig/network-scripts/ifcfg-eth1
+    DEVICE=eth1
+    HWADDR=08:00:27:A1:D2:2E
+    TYPE=Ethernet
+    UUID=6ff9f9fa-6d66-4df7-beca-e279c4dc1863
+    ONBOOT=yes
+    NM_CONTROLLED=yes
+    BOOTPROTO=none
+    BROADCAST=192.168.56.255
+    IPADDR=192.168.56.10
+    NETMASK=255.255.255.0
+    NETWORK=192.168.56.0
+    IPV6INIT=no
+
+Restart network service
+    `service network restart`
+
+
 ### CentOS 6: Open a port for iptables
 + Edit /etc/sysconfig/iptables
 + Add the following line above the first REJECT statement:
