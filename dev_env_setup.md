@@ -1,6 +1,7 @@
 Development Environment Setup
 =============================
 
+
 Install Centos 6.4 in Virtualbox
 --------------------------------
 http://webees.me/installing-centos-6-4-in-virtualbox-and-setting-up-host-only-networking/
@@ -20,9 +21,9 @@ Note that by doing this your VirtualBox guest is fully exposed on the local netw
 + Check MAC address in VM setting
 + Restart VM, check /etc/udev/rules.d/70-persistent-net.rules
 
-Bridge (DHCP)
-
-### vi /etc/sysconfig/network-scripts/ifcfg-eth0
+##### Bridge (DHCP)
+    vi /etc/sysconfig/network-scripts/ifcfg-eth0
+    
     DEVICE="eth0"
     BOOTPROTO="dhcp"
     HWADDR="08:00:27:E9:33:84"
@@ -31,9 +32,9 @@ Bridge (DHCP)
     TYPE="Ethernet"
     UUID="cfb31300-f7b8-4723-9c81-6ddbc1b976bf"
 
-Host-only
-
-### vi /etc/sysconfig/network-scripts/ifcfg-eth1
+##### Host-only
+    vi /etc/sysconfig/network-scripts/ifcfg-eth1
+    
     DEVICE=eth1
     HWADDR=08:00:27:A1:D2:2E
     TYPE=Ethernet
@@ -47,7 +48,8 @@ Host-only
     NETWORK=192.168.56.0
     IPV6INIT=no
 
-Restart network service
++ Restart network service
+    
     `service network restart`
 
 
