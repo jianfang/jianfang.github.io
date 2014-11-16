@@ -6,6 +6,11 @@ Install Centos 6.4 in Virtualbox
 --------------------------------
 http://webees.me/installing-centos-6-4-in-virtualbox-and-setting-up-host-only-networking/
 
+Install Centos 7.0 in Virtualbox
+--------------------------------
+Network source: http://centos.ustc.edu.cn/centos/7.0.1406/os/
+
+
 ### Connect to a VirtualBox guest machine over the network
 You must reconfigure the guest so it will get its own IP address:
 
