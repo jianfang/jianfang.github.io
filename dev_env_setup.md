@@ -61,13 +61,12 @@ Note that by doing this your VirtualBox guest is fully exposed on the local netw
 ### CentOS 6: Open a port for iptables
 + Edit /etc/sysconfig/iptables
 + Add the following line above the first REJECT statement:
-    `-A INPUT -m state --state NEW -m tcp -p tcp --dport <port> -j ACCEPT`
+    `-A INPUT -m state --state NEW -p tcp --dport <port> -j ACCEPT`
 + Restart iptables
-
     `service iptables restart`
 + Test from remote machine
-
     `telnet <hostname> <port>`
+
 
 Install softwares
 -----------------
