@@ -71,8 +71,7 @@ Note that by doing this your VirtualBox guest is fully exposed on the local netw
 Install softwares
 -----------------
 ### Python 3.4
-    yum install zlib-devel
-    yum install openssl-devel
+    yum install zlib-devel openssl-devel ncurses-devel sqlite-devel
 
     wget https://www.python.org/ftp/python/3.4.2/Python-3.4.2.tgz
     tar zxvf Python-3.4.2.tgz
