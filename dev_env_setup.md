@@ -5,6 +5,7 @@ Development Environment Setup
 Install Centos 6.4 in Virtualbox
 --------------------------------
 + http://scm.zoomquiet.io/data/20130820213455/index.html
++ http://toolkt.com/site/virtualbox-shared-folders-with-centos-server-guest/
 + http://webees.me/installing-centos-6-4-in-virtualbox-and-setting-up-host-only-networking/
 
 Install Centos 7.0 in Virtualbox
