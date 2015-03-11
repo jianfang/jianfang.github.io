@@ -75,9 +75,9 @@ Install softwares
 ### Python 3.4
     yum install zlib-devel openssl-devel ncurses-devel sqlite-devel
 
-    wget https://www.python.org/ftp/python/3.4.2/Python-3.4.2.tgz
-    tar zxvf Python-3.4.2.tgz
-    cd Python-3.4.2
+    wget https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz
+    tar zxvf Python-3.4.3.tgz
+    cd Python-3.4.3
     ./configure
     make; make install
 
