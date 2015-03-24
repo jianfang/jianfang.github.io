@@ -2,15 +2,15 @@ Development Environment Setup
 =============================
 
 
+Get Centos 7.0
+--------------------------------
+Network source: http://centos.ustc.edu.cn/centos/7.0.1406/os/
+
 Install Centos 6.4 in Virtualbox
 --------------------------------
 + http://scm.zoomquiet.io/data/20130820213455/index.html
 + http://toolkt.com/site/virtualbox-shared-folders-with-centos-server-guest/
 + http://webees.me/installing-centos-6-4-in-virtualbox-and-setting-up-host-only-networking/
-
-Install Centos 7.0 in Virtualbox
---------------------------------
-Network source: http://centos.ustc.edu.cn/centos/7.0.1406/os/
 
 
 ### Connect to a VirtualBox guest machine over the network
@@ -59,6 +59,8 @@ Note that by doing this your VirtualBox guest is fully exposed on the local netw
     
     `service network restart`
 
+### Install iptables in centos 7.0
+http://stackoverflow.com/questions/24756240/how-can-i-use-iptables-on-centos-7
 
 ### CentOS 6: Open a port for iptables
 + Edit /etc/sysconfig/iptables
@@ -87,21 +89,16 @@ Install softwares
     chkconfig sshd on
     service sshd start
 
-### emacs
-    yum install emacs (with X)
-    yum install emacs-nox
-
-### MongoDB
+### MongoDB 2.6
 http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fedora-linux/
 
-+ Configuration: /etc/mongodb.conf
++ Edit configuration: /etc/mongodb.conf
     + Enable http interface: httpinterface=true
     + Enable REST: rest=true
-    + Enable remote access: bind_ip
-+ Enable ports (27017, 28017) in iptables for mongod, HTTP and REST
+    + Change bind_ip: bind_ip=0.0.0.0
++ Enable ports (27017, 28017) in iptables for mongod (HTTP and REST)
 
-
-### Install iptables in centos
-http://stackoverflow.com/questions/24756240/how-can-i-use-iptables-on-centos-7
-
+### emacs (optional)
+    yum install emacs (with X)
+    yum install emacs-nox
 
