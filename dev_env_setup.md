@@ -102,3 +102,6 @@ http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fed
     yum install emacs (with X)
     yum install emacs-nox
 
+Install Pycharm
+---------------
+http://www.tuicool.com/articles/MJnYJb
