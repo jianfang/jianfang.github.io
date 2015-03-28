@@ -110,6 +110,6 @@ http://www.tuicool.com/articles/MJnYJb
 Flask Setup
 -----------
 
-*** iptables
+#### iptables
     -A INPUT -p tcp -m tcp --dport 5000 -m state --state NEW,ESTABLISHED -j ACCEPT
     -A INPUT -p tcp -m tcp --dport 8000 -m state --state NEW,ESTABLISHED -j ACCEPT
