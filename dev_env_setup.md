@@ -105,3 +105,11 @@ http://docs.mongodb.org/manual/tutorial/install-mongodb-on-red-hat-centos-or-fed
 Install Pycharm
 ---------------
 http://www.tuicool.com/articles/MJnYJb
+
+
+Flask Setup
+-----------
+
+*** iptables
+    -A INPUT -p tcp -m tcp --dport 5000 -m state --state NEW,ESTABLISHED -j ACCEPT
+    -A INPUT -p tcp -m tcp --dport 8000 -m state --state NEW,ESTABLISHED -j ACCEPT
