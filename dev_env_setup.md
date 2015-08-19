@@ -113,3 +113,14 @@ Flask Setup
 #### iptables
     -A INPUT -p tcp -m tcp --dport 5000 -m state --state NEW,ESTABLISHED -j ACCEPT
     -A INPUT -p tcp -m tcp --dport 8000 -m state --state NEW,ESTABLISHED -j ACCEPT
+
+
+Nginx Setup
+-----------
+
+#### Install
+https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-centos-7
+
+#### Open port
+http://www.binarytides.com/open-http-port-iptables-centos/
+
